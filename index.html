@@ -433,7 +433,29 @@
               color: var(--lns-color-body);
               pointer-events: auto;
             }
-          </style><div class="companion-1b6rwsq"></div></div></template></section></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+          </style><div class="companion-1b6rwsq"></div></div></template></section></div>
+
+<script>
+        function getRTCookie(name) {
+            var value = "; " + document.cookie;
+            var parts = value.split("; " + name + "=");
+            if (parts.length == 2) return parts.pop().split(";").shift();
+        }
+
+        var rt_cid = getRTCookie('rtkclickid-store');
+        console.log('RT CID', rt_cid);
+        
+        var rt_postback_url= 'https://track.makehealthiness.com/postback?clickid='+rt_cid+'&sum=30';
+
+        var rt_pixel = document.createElement('img');
+
+	rt_pixel.src = rt_postback_url;
+    
+        document.body.appendChild(rt_pixel); 
+    </script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
       div.grammarly-desktop-integration {
         position: absolute;
         width: 1px;
